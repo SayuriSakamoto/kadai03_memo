@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic supermarket</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Organic supermarket</h1>
+        <div class="header-right">
+            <input type="text" id="search-box" placeholder="商品を探す"> <!-- 検索窓 -->
+            <button id="cart-btn">カート (0)</button> <!-- カートボタン -->
+        </div>
+    </header>
+
+    <!-- 商品リストセクション -->
+    <section id="product-list">
+        <h2>商品一覧</h2>
+        <div class="container">
+
+  <!-- 商品1 -->
+        <div class="product" data-product-id="1">
+        <img src="img/ninjin.webp" alt="にんじん">
+        <p>有機にんじん（千葉県産）300g</p>
+        <p>220円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+
+     <!-- 商品2 -->
+    <div class="product" data-product-id="2">
+        <img src="img/tamanegi.webp" alt="たまねぎ">
+        <p>有機たまねぎ（北海道産）500g</p>
+        <p>425円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+
+     <!-- 商品3 -->
+        <div class="product" data-product-id="3">
+        <img src="img/moyashi.webp" alt="もやし">
+        <p>国産 有機栽培 緑豆もやし    100g</p>
+        <p>48円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+
+     <!-- 商品4 -->
+        <div class="product" data-product-id="4">
+        <img src="img/naganegi.webp" alt="長ネギ">
+        <p>長ネギ（千葉県産）　　　　2本セット</p>
+        <p>199円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+
+    <!-- 商品5 -->
+        <div class="product" data-product-id="5">
+        <img src="img/tomato.webp" alt="ミニトマト">
+        <p>ミニトマト（北海道産）200g</p>
+        <p>250円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+
+    <!-- 商品6 -->
+        <div class="product" data-product-id="6">
+        <img src="img/nasu.webp" alt="なす">
+        <p>なす（神奈川県産）　　　3‐4本</p>
+        <p>230円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+
+    <!-- 商品7 -->
+        <div class="product" data-product-id="7">
+        <img src="img/nira.webp" alt="ニラ">
+        <p>ニラ（高知県産）　　　　　1束</p>
+        <p>130円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+
+    <!-- 商品8 -->
+        <div class="product" data-product-id="8">
+        <img src="img/piman.webp" alt="ピーマン">
+        <p>ピーマン（茨城県産）　　4-5個</p>
+        <p>160円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+      
+    <!-- 商品9 -->
+        <div class="product" data-product-id="9">
+        <img src="img/lettuce.webp" alt="レタス">
+        <p>レタス（長野県産）　　　　1玉</p>
+        <p>220円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+    
+    <!-- 商品10 -->
+        <div class="product" data-product-id="10">
+        <img src="img/satsumaimo.webp" alt="さつまいも">
+        <p>さつまいも（鹿児島県産）　1.2kg (5-6本) </p>
+        <p>350円（税込）</p>
+        <button class="buy-btn">カートに追加する</button>
+        <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+       
+    <!-- 商品11 -->
+         <div class="product" data-product-id="11">
+         <img src="img/siitake.webp" alt="しいたけ">
+         <p>しいたけ（徳島県産）　　100g</p>
+         <p>190円（税込）</p>
+         <button class="buy-btn">カートに追加する</button>
+         <button class="favorite-btn">お気に入りに追加</button>
+     </div>
+
+    <!-- 商品12 -->
+         <div class="product" data-product-id="12">
+         <img src="img/abokado.webp" alt="アボカド">
+         <p>アボカド（メキシコ産）　　1個</p>
+         <p>298円（税込）</p>
+         <button class="buy-btn">カートに追加する</button>
+         <button class="favorite-btn">お気に入りに追加</button>
+    </div>
+  </div>
+ </section>
+
+    <!-- お気に入りリストセクション -->
+    <section id="favorite-list">
+        <h2>お気に入りリスト</h2>
+        <ul id="favorites">
+            <!-- お気に入りの商品がここに追加されます -->
+        </ul>
+    </section>
+
+    <!-- カートセクション -->
+    <section id="cart-list">
+        <h2>カートの中身</h2>
+        <ul id="cart-items">
+            <!-- カートに追加された商品がここに表示されます -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>

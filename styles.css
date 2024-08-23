@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center; /* 検索窓とカートボタンを縦方向に中央揃え */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* 左右の要素間にスペースを均等に配置 */
+    align-items: center;
+    background-color: #ecea4d;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+}
+
+#search-box {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px; /* 検索窓とカートボタンの間にスペースを追加 */
+}
+
+#cart-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart-btn {
+    background-color: #e26a45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart-btn:hover {
+    opacity: 0.8;
+}
+
+#cart-list {
+    margin-top: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#product-list, #favorite-list {
+    margin-bottom: 20px;
+}
+
+/* グリッドレイアウトを使用して2行6列に分ける */
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 2列に分ける */
+    grid-gap: 20px; /* 各商品間のスペース */
+    padding: 20px;
+}
+
+/* 各商品のスタイル */
+.product {
+    background-color: #f7faf3; /* 背景色 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* テキストとボタンを中央揃え */
+    color: #333; /* テキスト色を背景色とコントラストがつくように設定 */
+}
+
+/* 画像のサイズを調整 */
+.product img {
+    width: 150px; /* 幅を指定 */
+    height: auto; /* 高さを自動調整 */
+    display: block;
+    margin: 0 auto 10px auto; /* 画像を中央揃え */
+}
+
+/* ボタンのスタイル */
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #9fca99;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.favorite-btn {
+    background-color: #f9a980;
+}
+
+button:hover {
+    opacity: 0.8;
+}
